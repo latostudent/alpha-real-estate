@@ -1,7 +1,10 @@
 # Proyecto Alpha Real Estate
 
 ## Descripcion
-Esta es una de las paginas para el sitio web de una inmobiliaria. La página contiene la información específica de un proyecto para la construcción de departamentos. 
+Sitio web corporativo de una inmobiliaria, que contiene una lista de los departamentos que ofrece en venta.
+
+## Prototipo o maqueta
+[link](https://www.figma.com/file/sJervxW1AziHasL4Vt2A5f/Web---Alpha-Real-State)
 
 ### Participantes
 - Aaron Manuel Rivera Diaz
