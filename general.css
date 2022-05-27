@@ -185,3 +185,10 @@
   background-position: center;
 }
 
+.nav-item {
+  height: fit-content;
+}
+
+.nav.nav-pills {
+  align-items: center;
+}

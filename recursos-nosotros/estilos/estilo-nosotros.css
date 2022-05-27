@@ -1,0 +1,43 @@
+.titulo{
+    padding: 10px 500px;
+    text-align: center;
+    background-color: rgb(71, 192, 240);
+}
+
+.lado{
+    padding: 200px 275px;
+    text-align: center;
+}
+.texto{
+    font-size: 14px;
+}
+.textazo{
+    display: none;
+}
+.boton{    
+    background-color: transparent;
+    color: rgb(34, 11, 241);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.texto.show-more .textazo{
+    display: inline;
+}
+
+.text{
+    font-size: 14px;
+}
+.segundo{
+    display: none;
+}
+.ver{    
+    background-color: transparent;
+    color: rgb(34, 11, 241);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.text.show-more .segundo{
+    display: inline;
+}
