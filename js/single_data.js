@@ -16,7 +16,8 @@ var descripcionInmueble = detalle.descripcion;
 var mascotasInmueble = detalle.mascotas;
 var pisoInmueble = detalle.piso;
 var distritoInmueble = detalle.distrito;
-var telefonoInmueble = detalle.telefono; 
+var telefonoInmueble = detalle.telefono;
+var imgDestacada = detalle.imagenDestacada;
 
 var precioNuevo = precioInmueble.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -31,3 +32,7 @@ document.getElementById("pet").innerHTML = "mascotas: "+mascotasInmueble;
 document.getElementById("piso").innerHTML = "piso: "+pisoInmueble;
 document.getElementById("area").innerHTML = areaInmueble+" m²";
 
+var baseUrlImg = "url('./recursos/imagenes-inmuebles/";
+var styleUrlImg = baseUrlImg+imgDestacada+"')";
+
+document.getElementById("banner-principal").style.backgroundImage = styleUrlImg;
