@@ -1,5 +1,13 @@
 /*lista card property*/
 
+a {
+    text-decoration: unset !important;
+}
+
+.price-section h1, .price-section h2, .price-section h3 {
+  color: black;
+}
+
 #list-properties {
     display: flex;
     align-items: center;

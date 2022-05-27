@@ -1,338 +1,307 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none
 }
 
-/*Bloque 1*/
-.hero-card{
-    /* Hero */
-position: absolute;
-width: 1440px;
-height: 636px;
-left: 0px;
-top: 80px;
+body{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
 }
 
-.details-card{
-    margin:0;
-    min-height: 100vh;
-    background-image: url(https://imgclasificados4.emol.com/Proyectos/imagenes/proyecto/PR_FOTO_5109_los-acacios_fachada.jpg);
-    background-size: cover;
+.container{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 90px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #00214d;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 3rem;
+    color: #00214d;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+h5{
+    font-size: 1.5rem;
+    color:#00ebc7;
+    padding-bottom: 20px;
+}
+
+
+/*---MAIN---*/
+
+/*---Banner principal---*/
+
+.main{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+.banner-principal{
+    width: 100%;
+    height: 75vh;
+    background-image: url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
-
-.details-card-title{
+.texto-banner{
+    display: inline-block;
     position: absolute;
-    width: 720px;
-    height: 88px;
-    left: 360px;
-    top: 248px;
-    
-    /* Heading/Bold/H2 - 64px */
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 88px;
-    /* identical to box height, or 138% */
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    text-transform: capitalize;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    
-    /* Text/White */
-    
-    color: #FFFFFF;
+    width: 50%;
+    background-color: #55555596;
+    border-radius: 10px;
 }
 
-.details-card-subtitle{
-    position: absolute;
-width: 817px;
-height: 52px;
-left: 311px;
-top: 360px;
-
-/* Paragraph/Reguler/Body - 16px */
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-
-text-align: center;
-
-/* Text/Disable */
-
-color: #E6E6E6;
-}
-
-.b2{
-    position: absolute;
-    width: 1232px;
-    height: 891px;
-    left: 104px;
-    top: 740px;
-}
-
-.b2-img1{
-    position: relative;
-    width: 1232px;
-    height: 615px;
-    margin-bottom: 2%;
-
-    background: #E6E6E6;
-    border-radius: 8px;
-}
-
-.b2-img2{
-    position: relative;
-    width: 394.67px;
-    height: 252px;
-    border: 12px;
-    margin-right: 1.5%;
-
-    background: #E6E6E6;
-    border-radius: 8px;
-}
-
-.b2-img3{
-    position: relative;
-    width: 394.67px;
-    height: 252px;
-    border: 12px; 
-    margin-right: 1.5%;
-    
-    background: #E6E6E6;
-    border-radius: 8px;
-}
-
-.b2-img4{
-    position: relative;
-    width: 394.67px;
-    height: 252px;
-    border: 12px;
-
-    background: #E6E6E6;
-    border-radius: 8px;
-}
-
-.s-title{
-    /* Heading/Bold/H3 - 48px */
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 64px;
-/* identical to box height, or 133% */
-
-text-transform: capitalize;
-font-feature-settings: 'pnum' on, 'lnum' on;
-
-/* Text/Tittle */
-
-color: #123763;
-margin-top: 2%;
-margin-bottom: 2%;
-
-}
-
-.paragraph{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
-
-    /* Text/Body */
-    color: #474747;
-    margin-top: 2%;    
-}
-
-.b3{
-    position: absolute;
-width: 1024px;
-height: 270px;
-left: 104px;
-top: 1679px;
-}
-
-.b4{
-    position: absolute;
-    width: 1223px;
-    height: 664px;
-    left: 104px;
-    top: 2029px;
-}
-
-.b4-list-1{
-    /* Smart Home */
-    position: relative;
-    width: 333px;
-    height: 244px;
-    display: inline-block;
-    margin-top: 3%;
-    margin-right: 5%;
-}
-
-.b4-list-2{
-    /* Smart Home */
-    position: relative;
-    width: 333px;
-    height: 244px;
-    display: inline-block;
-    margin-top: 3%;
-    margin-right: 5%;
-}
-
-
-.b4-title-item{
-    /* Heading/Bold/H5 - 24px */
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
+.text-h1{
+    color: #fff;
+    margin-bottom: 30px;
     font-size: 24px;
-    line-height: 38px;
-    /* identical to box height, or 158% */
-
-    text-transform: capitalize;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-    /* Text/Tittle */
-
-    color: #123763;
 }
 
-.b4-paragraph-item{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-/* or 162% */
-
-/* Text/Body */
-
-color: #474747;
+/* Precio */
+.price{
+    background-color: #f2f4f6;
+    padding: 80px 0 54px 0;
+}
+.price .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
 
-.b5{
-    position: absolute;
-width: 1232px;
-height: 1572px;
-left: 104px;
-top: 2853px;
+/* Descripcion */
+.description{
+    padding: 80px 0 54px 0;
 }
 
-.b5-title{
+/* Características */
+.characteristics{
+    background-color: #001534;
+    padding: 80px 0 54px 0;
+    color: #fff;
+}
+
+ /* .characteristics-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristics-items-inside, .characteristics-items-outside{
+    width: 90%;
+    padding: 10px;
+}  */
+
+
+.section-title h2{
+    color: #fff;  
+}
+
+.list{
+        width: 33%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+        line-height: 12px;
+}
+
+
+
+/*Galería*/
+.galleries{
+    background-color: #f2f4f6;
+    padding: 80px 0 54px 0;
+}
+
+
+.gallery-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 34px;
+}
+
+.gallery{
+    width: 32%;
+    margin-bottom: 2%;
+    cursor: pointer;   
+}
+
+.gallery img{
+    width: 100%;
+    vertical-align: top;
+}
+/* Modal fotos proyecto */
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999999999999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img{
+    width: 90%;
+    max-width: 600px;
+}
+
+.modal .btn-cerrar{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    background: #00ebc7;
     text-align: center;
+    cursor: pointer;
+  }
+  
+  .modal .btn-cerrar i{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 100px;
+  }
+
+/* Contacto */
+.contact{
+    padding: 100px 0;
+    background-image: url("https://img.freepik.com/foto-gratis/joven-hombre-negocios-feliz-expresion_1194-1554.jpg?w=740&t=st=1653261571~exp=1653262171~hmac=660849bba84b21f9bafe4c35f23d5df1fcb2a19782aed20978186a111ecefda4");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.b5-phases{
-    /* First Phase */
-position: relative;
-width: 1232px;
-height: 311px;
-margin-top: 5%;
-display: flex;
+.container-forms{
+    /* background: #fff; */
+    min-height: 485px;
+    border-radius: 3px;
+    box-shadow: 0px 9px 32 px -11px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
 }
 
-.b5-phases-img{
-    position: relative;
-    width: 540px;
-    height: 311px;
-    }
-
-.b5-phases-text{
-    position: relative;
-    width: 540px;
-    height: 311px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+.forms{
+    background: #fff;
+    width: 50%;
+    padding: 70px;
 }
 
-.b5-subtitle .b5-paragraph{
-    margin: 2%;
-}
-
-/*.b6{
-    position: absolute;
-width: 1232px;
-height: 1105px;
-left: 104px;
-top: 4585px;
-}
-
-.carousel-gallery{
-
-    display: inline-block;
-}*/
-
-.b7-button{
-    /* Button */
-    position: static;
-    width: 60px;
-    height: 24px;
-    left: 40px;
-    top: 24px;
-    
-    /* Heading/Bold/H6 - 16px */
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+.forms h2{
+    font-size: 1.375rem;
     line-height: 24px;
-    /* identical to box height, or 150% */
-    
-    text-transform: capitalize;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    
-    /* Base/White */
-    
-    color: #FFFFFF;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 24px 40px;
-
-position: absolute;
-width: 174px;
-height: 72px;
-left: 633px;
-top: 4562px;
-
-/* Primary/50% */
-
-background: #2EC4B6;
-border-radius: 8px;
+    color: #00214d;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-/*Footer*/
-.footer{
-    position: absolute;
-width: 1440px;
-height: 403px;
-left: 0px;
-top: 4774px;
+.form p{
+    color: #1b2d45;
+    font-size: 1rem;
+    font-weight: 400px;
+    margin-bottom: 30px;
+}
+
+.forms form input[type="text"], .forms form input[type="email"], .forms form input[type="number"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #00ebc7;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.forms form textarea{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 88px;
+    min-height: 88px;
+    color: #00ebc7;
+    margin-bottom: 10 px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 0;
+}
+
+.forms input[type="submit"]{
+width: 100%;
+border: none;
+border: 3px solid #00214d;
+padding: 8px;
+background-color: #fff;
+font-size: 0.9rem;
+font-family: 'poppins', sans-serif;
+letter-spacing: 0.5px;
+cursor: pointer;
+transition: all .7s ease;
+}
+
+.forms input[type="submit"]:hover{
+    background: #00ebc7;
+    color: #00214d;
+}
+
+.forms .models{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*Validacion formulario*/
+
+ .forms form .error{
+    display: none;
+    color: #ff8c8c;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+
+@media screen and (max-width:1040px) {
+    
 }

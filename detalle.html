@@ -3,229 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos-detalle.css">
-    <link href="./general.css" rel="stylesheet">
+    <link href="./css/estilos-detalle.css" rel="stylesheet" >
+    <title>Detalle del Inmueble</title>  
 </head>
 
 <body>
-    <main>
-<!--Insertar header-->
 
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <img src="./logo_inmo.png" alt="logo" height="40">
-          </a>
+    <!--Encabezado insertar aquí el nav, @Carlos-->
+    <div class="container" id="dynamic-header">
     
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Inicio</a></li>
-        <li class="nav-item"><a href="./lista.html" class="nav-link">Propiedades</a></li>
-        <li class="nav-item"><a href="./detalle.html" class="nav-link">Detalles</a></li>
-        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
-          </ul>
-        </header>
-      </div>
+    </div>
+    
+        <!--Version movil-->       
 
-<!--Bloque 1-->
-<div class="details-card hero-card" data-uia="details-card">
-    <div class="details-card-background">
-        <div class="concord-img-wrapper" data-uia="concord-img-wrapper" style="height: 630px;">
-            <div class="concord-img-gradient">
-            </div>
-        </div>
-    </div>
-    <div class="details-card-text">
-        <h1 id class="details-card-title" data-uia="details-title">Nombre del Poyecto</h1>
-        <h3 id class="details-card-subtitle" data-uia="details-card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae culpa quo animi dolor debitis saepe a, at, sequi incidunt quisquam nesciunt iusto. Omnis aut ad odio veniam distinctio cum?</h3>
-       
-    </div>
-    <div class="center-pixel" style="position:absolute"></div>
-</div>
 
-<!--Bloque 2-->
-<div class="b2">
-    <div class="b2-img1">
-        <img src="Recursos/Imágenes/dep1-vista1.png" alt="...">
-    </div>
-    <img src="Recursos/Imágenes/dep1-vista2.png" class="b2-img2" alt="...">
-    <img src="Recursos/Imágenes/dep1-vista3.png" class="b2-img3" alt="...">    
-    <img src="Recursos/Imágenes/dep1-vista4.png" class="b2-img4" alt="...">
-</div>
+        <!--Version escritorio-->    
         
-</div>
 
-<!--Bloque 3-->
-<div class="b3">
-    <h3 class="s-title b3-title">Descripción del proyecto</h3>
-    <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. <br><br>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.    </p>
-</div>
+    <!--Main-->
+<section class="main">
+        <!--Banner principal-->
+    <section class="banner-principal">
+        <div class="banner" id="banner"></div>
+        <div class ="texto-banner">
+            <h1 id="titulo"> Nombre del proyecto</h1>
+            <p class="text-h1" id="direccion"></p>
+        </div>
+    </section>
 
-<!--Bloque 4-->
-<div class="b4">
-    <h3 class="s-title b4-title">Cualidades</h3>
-    <div class="b-list">
-       <div class="b4-list-1">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Smart Home</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-        <div class="b4-list-1">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Atractive Location</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-        <div class="b4-list-1">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Parking Space</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-        <div class="b4-list-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Media Center</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-        <div class="b4-list-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Swimming Pool</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-        <div class="b4-list-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100"><path d="M14 38V36H9.3Q6.25 36 4.125 33.875Q2 31.75 2 28.7V17.55Q2 14.4 4.1 12.2Q6.2 10 9.3 10H38.75Q41.8 10 43.9 12.225Q46 14.45 46 17.55V28.7Q46 31.7 43.875 33.85Q41.75 36 38.75 36H34V38ZM5 13Q5 13 5 14.35Q5 15.7 5 17.55V28.7Q5 30.45 5 31.725Q5 33 5 33Q5 33 5 31.725Q5 30.45 5 28.7V17.55Q5 15.7 5 14.35Q5 13 5 13ZM9.3 33H38.75Q40.5 33 41.75 31.725Q43 30.45 43 28.7V17.55Q43 15.7 41.775 14.35Q40.55 13 38.75 13H9.3Q7.5 13 6.25 14.35Q5 15.7 5 17.55V28.7Q5 30.45 6.275 31.725Q7.55 33 9.3 33Z"/></svg>
-            <div class="b4-title-item">Gym & Fitness</div>
-            <div class="b4-paragraph-item">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
-        </div>
-    </div>
-        
-</div>
-<!--Bloque 5-->
-<div class="b5">
-    <h3 class="s-title b5-title">Avance del proyecto</h3>
-    <div class="b5-phases">
-        <div class="b5-phases-img">
-            <img src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1539367376/p/photo/image/2747552/Takenoya-Planta.jpg" alt="plano arquitectonico" width="540px" height="311px">
-        </div>
-        <div class="b5-phases-text">
-            <h3 class="s-title b5-subtitle">Primera fase</h3>
-            <p class="paragraph b5-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco es</p>
-        </div>          
-    </div>
-    <div class="b5-phases">
-        <div class="b5-phases-text">
-            <h3 class="s-title b5-subtitle">Segunda fase</h3>
-            <p class="paragraph b5-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco es</p>
-        </div>
-        <div class="b5-phases-img">
-            <img src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1539367376/p/photo/image/2747552/Takenoya-Planta.jpg" alt="plano arquitectonico" width="540px" height="311px">
-        </div>          
-    </div>
-    <div class="b5-phases">
-        <div class="b5-phases-img">
-            <img src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1539367376/p/photo/image/2747552/Takenoya-Planta.jpg" alt="plano arquitectonico" width="540px" height="311px">
-        </div>
-        <div class="b5-phases-text">
-            <h3 class="s-title b5-subtitle">Tercera fase</h3>
-            <p class="paragraph b5-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco es</p>
-        </div>          
-    </div>
-    <div class="b5-phases">
-        <div class="b5-phases-text">
-            <h3 class="s-title b5-subtitle">Cuarta fase</h3>
-            <p class="paragraph b5-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco es</p>
-        </div>
-        <div class="b5-phases-img">
-            <img src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1539367376/p/photo/image/2747552/Takenoya-Planta.jpg" alt="plano arquitectonico" width="540px" height="311px">
-        </div>
-    </div>
-</div>
-
-<!--Bloque 6
-<div class="b6">
-    <h3 class="s-title">Galeria</h3>
-    <div class="carousel-gallery1">           
-        <div class="carousel-item">
-            <img src="https://www.construyehogar.com/wp-content/uploads/2015/08/Plano-de-departamento-de-dos-dormitorios-39.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="https://www.construyehogar.com/wp-content/uploads/2015/08/Plano-de-departamento-de-dos-dormitorios-39.jpg" class="d-block w-100" alt="...">
-        </div>
-</div>-->
-
-
-<!--Bloque 7-->
-<div class="b7">
-    <button class="b7-button">Cotizar</button>
-</div>
-
-<!--Footer-->
-<div class="footer">
-    <div class="container">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-2">
-              <h5>Menú</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Propiedades</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nosotros</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
-      
-              </ul>
+    <!--price-->
+    <section class="price">
+        <div class="container">
+            <div class="content">
+                <h5 class="subtitle">Precio</h5>
+                <h3 id="change-price"></h3>
             </div>
-      
-            <div class="col-2">
-              <h5>Propiedades</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Departamentos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Flats</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dúplex</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Triplex</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pent-House</a></li>
-              </ul>
+            <div class="card">
+                <div>
+                    <a href="./calculadora.html"><button type="button" class="btn btn-primary">Calcula tus cuotas</button>
+                    </a>
+                    </div>
             </div>
-      
-            <div class="col-2">
-              <h5>Distritos</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Surco</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">San Borja</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">San Isidro</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miraflores</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Barranco</a></li>
-              </ul>
+        </div>
+            
+            
+            
+
+        </div>
+    </section>
+    <!--description-->
+    <section class="description">
+        <div class="container">
+            <div class="row" id="description-project-title">
+                <h2>Descripción del proyecto</h2>
             </div>
-      
-            <div class="col-4 offset-1">
-              <form>
-                <h5>Subscribete</h5>
-                <p>No te pierdas las ofertas y novedades.</p>
-                <div class="d-flex w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribirme</button>
+            <div class="row" id="description-project-paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro impedit nemo expedita commodi, <br>
+                    saepe mollitia quaerat beatae itaque eveniet placeat voluptate nesciunt a repellat ratione dolores dicta <br>
+                    magnam sint praesentium?</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Characteristics-->
+    <section class="characteristics">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cualidades</h2>
+            </div>
+            <div class="row">
+                <div class="col" id="characteristics-items">
+                    <div class="col">
+                        <ul id="characteristics-items-inside">
+                            <li class="list"><i class="fa-solid fa-bed"></i> <span id="hab"></span> </li>
+                            <li class="list"><i class="fa-solid fa-toilet"></i> <span id="bath"></span> </li>
+                            <li class="list"><i class="fa-solid fa-dog"></i> <span id="pet"></span>  </li>
+                            <li class="list"><i class="fa-solid fa-house"></i> <span id="piso"></span> </li>
+                            <li class="list"><i class="fa-solid fa-ruler-combined"></i> <span id="area"></span> </li>
+                        </ul>
+                    </div>
+                   
                 </div>
-              </form>
+                <div class="col" id="gps-maps">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="600" height="357" id="gmap_canvas" src="https://maps.google.com/maps?q=av.%20javier%20prado&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://fmovies-online.net"></a>
+                            <br>
+                            <style>.mapouter{position:relative;text-align:right;height:357px;width:600px;}</style>
+                            <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:357px;width:600px;}</style>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      
-          <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2022. Derechos reservados</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-            </ul>
-          </div>
-        </footer>
+        </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="galleries" id="galleries">
+        <div class="container">
+            <div>
+                <h2>Galería</h2>
+            </div>
+            <div class="gallery-img">
+                <div class="gallery">
+                    <img src="./img/area1.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+                <div class="gallery">
+                    <img src="./img/area2.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+                <div class="gallery">
+                    <img src="./img/area6.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+                <div class="gallery">
+                    <img src="./img/area4.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+                <div class="gallery">
+                    <img src="./img/area5.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+                <div class="gallery">
+                    <img src="./img/area6.jpg" alt="cocina" class="imagen-gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <div class="contact">
+        <div class="container">
+            <div class="container-forms">
+                <div class="forms" id="forms">
+                    <h2>Contáctanos</h2>
+                    <p>Nuestros asesores te atenderán con gusto.</p>
+                    <form action="">
+                        <div>
+                        <label for="name">Nombres completos</label>
+                            <input type="text" name="name" id="name">
+                            <p class="error">Por favor escribe tu nombre</p>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email">
+                            <p class="error">Por favor escribe tu correo electrónico</p>
+                        </div>
+                        <div>
+                            <label for="models">Modelo</label>
+                            <br>
+                            <select class= "models" name="models" id="models">
+                                <option value="model1">Modelo1</option>
+                                <option value="model2">Modelo2</option>
+                                <option value="model3">Modelo3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone">Número de teléfono</label>
+                            <input type="text" name="phone" id="phone">
+                            <p class="error">Por favor escribe tu número de teléfono</p>
+                        </div>
+                        <div>
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message"></textarea>
+                            <p class="error">Por favor escribe tu mensaje</p>
+                        </div>
+                        <div>
+                            <input type="submit" name="send" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class="foto"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> 
+
+<!--footer-->
+<div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Menú</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Propiedades</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nosotros</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
+  
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Propiedades</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Departamentos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Flats</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dúplex</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Triplex</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pent-House</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Distritos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Surco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">San Borja</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">San Isidro</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miraflores</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Barranco</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Subscribete</h5>
+            <p>No te pierdas las ofertas y novedades.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribirme</button>
+            </div>
+          </form>
+        </div>
       </div>
-</div>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
- 
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022. Derechos reservados</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
 </body>
 
+<script src="./librerias/jquery.js"></script>
+<script src="./js/header_data.js"></script>
+<script src="./js/basedatos.js"></script>
+<script src="./js/single_data.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/233512eda9.js" crossorigin="anonymous"></script>
+<script src="./js/prefixfree.min.js"></script>
+<script src="./js/scritp-detalle.js"></script>
 </html>

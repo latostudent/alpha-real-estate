@@ -7,17 +7,17 @@ $(document).ready(function() {
 
         $("#list-properties").append(`<div class="card property-loop">
         <div class="imgBx">
-          <img src="./recursos/imagenes-inmuebles/${InmuebleArray[i].imagenDestacada}" alt="house">
+          <a href="./detalle.html?id=${InmuebleArray[i].id}"><img src="./recursos/imagenes-inmuebles/${InmuebleArray[i].imagenDestacada}" alt="house"></a>
           <input type="checkbox">
           <div class="heart">
             <i class="fas fa-heart"></i>
           </div>
         </div>
-        <div class="price-section">
+        <a href="./detalle.html?id=${InmuebleArray[i].id}"><div class="price-section">
           <h2>${InmuebleArray[i].titulo}</h2>
           <h1>US$ ${precioNuevo}</h1>
           <h3>${InmuebleArray[i].direccion}</h3>
-        </div>
+        </div></a>
         <div class="info-section">
           <div class="beds">
             <h3><i class="fas fa-bed"></i> <span>${InmuebleArray[i].habitaciones}</span> Habitaciones</h3>
